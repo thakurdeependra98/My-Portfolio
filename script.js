@@ -30,9 +30,52 @@ ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
 ScrollTrigger.refresh();
 
+var tl = gsap.timeline();
+
+tl.from("header",{
+  opacity:0,
+  y:-50,
+  duration:0.5,
+  delay:0.3
+})
+
+tl.from("nav",{
+  y:-50,
+  opacity:0,
+  duration:0.3,
+  delay:0.5
+})
+
+tl.from(".intro h2",{
+  opacity:0,
+  y:100,
+  duration:0.5,
+  // duration:1,
+  stagger:0.5
+})
+
+tl.from(".intro h1",{
+  opacity:0,
+  y:100,
+  duration:0.5,
+  // duration:1,
+  stagger:0.8
+})
+
+tl.from(".intro span",{
+  opacity:0,
+  duration:1,
+})
+
+tl.from(".image",{
+  x:100,
+  opacity:0,
+  duration:0.2,
+})
 
 gsap.to(".overlay",{
     top:"-100%",
+    opacity:1,
     scrollTrigger:{
         scroller:".main",
         trigger:".page2",
@@ -72,18 +115,17 @@ const text = document.querySelectorAll(".about p")
 text.forEach(function(e){
   var anim = e.childNodes[2]
   
-  gsap.from("anim",{
+  gsap.from(e,{
+    y:50,
     opacity:0,
-    duration:1,
-
       scrollTrigger:{
         scroller:".main",
         trigger:".about",
-        start:"top 14%",
-        end:"top -10%",
-        markers:true,
-        scrub:2,
-        pin:true,
+        start:"top 10%",
+        end:"top 0%",
+        // markers:true,
+        scrub:1,
+        // pin:true,
       }
     })
 })

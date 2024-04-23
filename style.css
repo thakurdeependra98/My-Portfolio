@@ -25,8 +25,8 @@ header{
     width: 100vw;
     height: 10vh;
     display: flex;
-    position: fixed;
-    z-index: 999999;
+    /* position: fixed; */
+    z-index: 999;
     align-items: center;
     justify-content: space-between;
     padding: 20px 10vw;
@@ -55,8 +55,8 @@ nav{
 nav h3{
     font-size: 1.1rem;
     letter-spacing: 0.2rem;
-    font-weight: 400;
-    color: var(--textcolor);
+    font-weight: 500;
+    color: var(--secondarycolor);
     display: flex;
     align-items: center;
     transition: all ease-in 0.3s;
@@ -65,7 +65,7 @@ nav h3{
 }
 nav h3:hover{
     font-weight: 500;
-    color: var(--secondarycolor);
+    color: var(--textcolor);
     border-bottom: 2px solid var(--secondarycolor);
 }
 .page1{
@@ -74,7 +74,7 @@ nav h3:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25vh 5vw;
+    padding: 20vh 5vw;
     /* background:radial-gradient( #be000045,#be000009); */
 }
 .home{
@@ -140,10 +140,10 @@ nav h3:hover{
     top:0;
     left: 0;
     z-index: 999;
+    opacity: 0;
 }
 
 .page2 .about h1{
-    font-family: voyage;
     margin-bottom: 3rem;
     color: var(--secondarycolor);
 }
