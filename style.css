@@ -15,12 +15,18 @@ body{
     --primarycolor:rgba(255, 255, 255, 0.993);
     --secondarycolor:#159f00;
     --textcolor:#363636;
+    --backgroundColor:#1E293B;
 }
 .main{
     width: 100vw;
     /* height: 100vh; */
     background-color: var(--primarycolor);
 }
+/* .mouse{
+    background-image: url("./Screenshot_2024-05-02-13-54-51-68_a63b0f8076346d26cbdc1b971a1da2a7-removebg-preview.png");
+    background-position: top;
+    background-size: cover;
+} */
 header{
     width: 100vw;
     height: 10vh;
@@ -31,7 +37,7 @@ header{
     justify-content: space-between;
     padding: 20px 10vw;
     /* mix-blend-mode:difference; */
-    background-color: var(--primarycolor);
+    background-color:var(--backgroundColor);
     cursor: pointer;
     border-bottom: 1px solid var(--secondarycolor);
     
@@ -39,9 +45,9 @@ header{
 .logo{
     font-size: 2rem;
     /* text-decoration: none; */
-    color:var(--textcolor);
+    color:var(--primarycolor);
     letter-spacing: 0.1rem;
-    font-weight: 400;
+    font-weight: 300;
     /* font-family: voyage; */
     /* border: 1px solid var(--secondarycolor); */
     transition: all ease-in 0.3s;
@@ -56,7 +62,7 @@ nav h3{
     font-size: 1.1rem;
     letter-spacing: 0.2rem;
     font-weight: 500;
-    color: var(--secondarycolor);
+    color: var(--primarycolor);
     display: flex;
     align-items: center;
     transition: all ease-in 0.3s;
@@ -65,7 +71,7 @@ nav h3{
 }
 nav h3:hover{
     font-weight: 500;
-    color: var(--textcolor);
+    color: var(--secondarycolor);
     border-bottom: 2px solid var(--secondarycolor);
 }
 .page1{
@@ -97,7 +103,7 @@ nav h3:hover{
     color: var(--textcolor);
 }
 .home h1 span{
-    padding-left: 3vw;
+    padding-left: 4vw;
     font-size: 4.5rem;
     font-weight: 300;
     font-family: voyage;
@@ -113,16 +119,16 @@ nav h3:hover{
 }
 .image img{
     width: 17rem;
-    height: 22rem;
+    height: 28rem;
     border-radius: 0.8rem;
     object-fit: cover;
-    object-position: top;
+    object-position:center;
     /* border: 1px solid var(--secondarycolor); */
-    filter: brightness(1.1);
-    filter: grayscale(1);
+    /* filter: brightness(1.1); */
+    /* filter: grayscale(1); */
     transition: all ease-in-out 0.7s;
-    box-shadow: 0px 0px 100px var(--textcolor);
-    transform: rotateZ(15deg)
+    /* box-shadow: 0px 0px 100px var(--backgroundColor); */
+    /* transform: rotateZ(15deg) */
 }
 .image img:hover{
     filter: grayscale(0);
@@ -136,7 +142,7 @@ nav h3:hover{
 .overlay{
     position: absolute;
     clip-path: polygon(50% 0, 76% 8%, 100% 0, 100% 100%, 70% 100%, 0 100%, 0 0, 24% 8%);
-    background-color: var(--secondarycolor);
+    background-color: var(--backgroundColor);
     top:0;
     left: 0;
     z-index: 999;

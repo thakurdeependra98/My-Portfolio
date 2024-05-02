@@ -43,15 +43,15 @@ tl.from("nav",{
   y:-50,
   opacity:0,
   duration:0.3,
-  delay:0.5
+  delay:0.3
 })
 
 tl.from(".intro h2",{
   opacity:0,
   y:100,
-  duration:0.5,
+  duration:0.3,
   // duration:1,
-  stagger:0.5
+  stagger:0.2
 })
 
 tl.from(".intro h1",{
@@ -59,12 +59,12 @@ tl.from(".intro h1",{
   y:100,
   duration:0.5,
   // duration:1,
-  stagger:0.8
+  stagger:0.2
 })
 
 tl.from(".intro span",{
   opacity:0,
-  duration:1,
+  duration:0.5,
 })
 
 tl.from(".image",{
@@ -86,32 +86,72 @@ gsap.to(".overlay",{
         // pin:true,
     }
 })
+gsap.from(".page2",{
+  opacity:0,
+  scale:0,
+  scrollTrigger:{
+      scroller:".main",
+      trigger:".page2",
+      start:"top 50%",
+      end:"top -50%",
+      // markers:true,
+      scrub:2,
+      pin:true,
+  }
+})
 
 const mouse = document.querySelector(".mouse")
+const image = document.querySelector(".mouse img")
 document.querySelector(".intro").addEventListener("mousemove",function(e){
-  // document.querySelector(".mouse").style.top = e.y-15+"px";
-  // document.querySelector(".mouse").style.left = e.x-30+"px";
   gsap.to(mouse,{
-    top:e.y-45+"px",
-    left:e.x-45+"px",
+    top:e.y-55+"px",
+    left:e.x-55+"px",
     transform: "scale(1)",
-    display: "block"
+    display: "block",
+    mixBlendMode:"difference"
     // duration:0.2,
   })
 })
 document.querySelector(".intro").addEventListener("mouseenter", function(){
   gsap.to(mouse,{
-    transform: "scale(1)"
+    backgroundImage:"hidden",
+    transform: "scale(1)",
+    duration:0.3
   })
 })
 document.querySelector(".home").addEventListener("mouseleave", function(){
   gsap.to(mouse,{
-    transform: "scale(0)"
+    transform: "scale(0)",
+    backgroundImage:"inatial",
+
+
   })
 })
 
-const text = document.querySelectorAll(".about p")
+const app = document.querySelector(".section")
 
+app.addEventListener("mousemove",function(e){
+    gsap.to(mouse,{
+      top:e.y-55+"px",
+      left:e.x-55+"px",
+      transform: "scale(1)",
+      display: "block",
+      // duration:0.2,
+    })
+  })
+  app.addEventListener("mouseenter", function(){
+    gsap.to(mouse,{
+      transform: "scale(1)",
+    })
+  })
+app.addEventListener("mouseleave", function(){
+    gsap.to(mouse,{
+      transform: "scale(0)",
+    })
+  })
+  
+  const text = document.querySelectorAll(".about p")
+  
 text.forEach(function(e){
   var anim = e.childNodes[2]
   
@@ -129,3 +169,18 @@ text.forEach(function(e){
       }
     })
 })
+
+// gsap.from(".skills",{
+//   opacity:0,
+//   scale:0,
+//   stagger:0.2,
+//   scrollTrigger:{
+//     scroller:".main",
+//     trigger:".page3",
+//     start:"top 10%",
+//     end:"top -90%",
+//     // markers:true,
+//     scrub:1,
+//     pin:true,
+//   }
+// })

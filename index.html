@@ -12,7 +12,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="mouse w-28 h-28 rounded-full z-10 border-2 bg-white absolute scale-0 hidden mix-blend-difference cursor-grab"></div>
+    <div class="mouse w-28 h-28 rounded-full z-10 absolute scale-0 hidden truncate cursor-grab bg-white mix-blend-difference">
+        <img class="hidden " alt="">
+    </div>
     <header>
         <h1 class="logo" href="#">Deependra Singh</h1>
         <nav>
@@ -29,27 +31,29 @@
                 <div class="intro">
                     <h2 class="text-2xl tracking-widest font-normal">Hello,</h2>
                 <h2 class="text-2xl tracking-widest font-normal">I'm a </h2>
-                <h1>MERN </h1>
-                <h1> <span> <i>Stack</i></span> Developer</h1>
+                <h1 data-scroll data-scroll-speed="5" data-scroll-direction="horizontal">MERN </h1>
+                <h1 data-scroll data-scroll-speed="-5" data-scroll-direction="horizontal"> <span> <i>Stack</i></span> Developer</h1>
                 </div>
             </div>
             <div class="image">
-                <img src="./WhatsApp Image 2024-03-15 at 21.15.45_3149635a.jpg" alt="">
+                <img data-scroll data-scroll-speed="-2" src="./media/Screenshot_2024-05-02-13-54-51-68_a63b0f8076346d26cbdc1b971a1da2a7-removebg-preview.png" alt="">
             </div>
         </div>
         <div class="page2 relative w-screen h-screen">
-            <div class="overlay w-screen h-5/6">
-            </div>
+            <!-- <div class="overlay w-screen h-5/6">
+            </div> -->
             <div class="about w-screen h-screen pt-20 px-24 ">
-                <h1 class="text-5xl font-normal pl-10 ">About Me</h1>
-                <p class="text-xl tracking-wider w-11/12 pl-24 mb-6">Hello! I'm Deependra Singh, hailing from the beautiful city of Bhopal. Currently, I'm in the final year of my <span><i>Master of Computer Applications (MCA)</i></span> program at BHABHA University, where I've been delving deep into the world of technology and software development.</p>
-                <p class="text-xl tracking-wider w-11/12 pl-24">My journey as a <span><i>MERN stack developer</i></span>, adept at crafting robust web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, he seamlessly bridges the gap between front-end and back-end development. Deependra's proficiency lies in building dynamic user interfaces and scalable server-side systems, making him a valuable asset in the world of modern web development.</p>
+                <h1 class="text-5xl font-medium" >About Me</h1>
+                <div class="section border-2 border-[#1E293B] py-8 rounded-xl mx-16 font-normal">
+                    <p class="text-xl tracking-wider w-11/12 pl-16 mb-6">Hello! I'm Deependra Singh, hailing from the beautiful city of Bhopal. Currently, I'm in the final year of my <span><i>Master of Computer Applications (MCA)</i></span> program at BHABHA University, where I've been delving deep into the world of technology and software development.</p>
+                <p class="text-xl tracking-wider w-11/12 pl-16">My journey as a <span><i>MERN stack developer</i></span>, adept at crafting robust web applications. With expertise in MongoDB, Express.js, React.js, and Node.js, he seamlessly bridges the gap between front-end and back-end development. Deependra's proficiency lies in building dynamic user interfaces and scalable server-side systems, making him a valuable asset in the world of modern web development.</p>
+                </div>
             </div>
         </div>
-        <div class="page3 w-screen h-screen pl-24">
-            <h1 class="text-5xl mb-16">Skills</h1>
-            <div class="skills flex flex-wrap gap-16 inline-block text-xl">
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+        <div class="page3 w-screen h-screen pl-24 pt-4">
+            <h1 class="text-5xl mb-16 text-[#159f00] font-medium">Skills</h1>
+            <div class="skills flex flex-wrap gap-16 inline-block text-xl" data-scroll-sticky="2">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal" >
                     <h3 class="text-white">HTML 5</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -61,7 +65,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal"  >
                     <h3 class="text-white">CSS</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -73,7 +77,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="0"  >
                     <h3 class="text-white">JavaScript</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -85,7 +89,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal" >
                     <h3 class="text-white">Tailwind CSS</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -97,7 +101,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal" >
                     <h3 class="text-white">Responsive</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -109,7 +113,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal"  >
                     <h3 class="text-white">React</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -121,7 +125,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="-3" data-scroll-direction="horizontal"  >
                     <h3 class="text-white">Node js</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -133,7 +137,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="0">
                     <h3 class="text-white">Express js</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -145,7 +149,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal"  >
                     <h3 class="text-white">MongoDB</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -157,7 +161,7 @@
                         </div>
                     </div>    
                 </div>
-                <div class="skill bg-[#159f00] p-3 rounded-md">
+                <div class="skill ring-[#159f00] ring-inset ring-2 bg-slate-800 p-3 rounded-md" data-scroll data-scroll-speed="3" data-scroll-direction="horizontal"  >
                     <h3 class="text-white">Animated Web</h3>
                     <div class="progress">
                         <div class="progress-bar w-[10rem] h-[2rem]">
@@ -167,6 +171,38 @@
                             <i class="ri-star-s-fill text-green-500"></i>
                         </div>
                     </div>    
+                </div>
+            </div>
+        </div>
+        <div class="page4 w-screen h-screen pl-24 pt-4">
+            <h1 class="text-5xl mb-12 text-[#159f00] font-medium ">Projects</h1>
+            <div class="projects ">
+                <div class="projectName flex gap-12 justify-center mb-12"> 
+                    <h1 class="text-2xl font-normal ">Front-end</h1>
+                    <h1 class="text-2xl font-normal ">Back-end</h1>
+                    <h1 class="text-2xl font-normal ">React</h1>
+                </div>
+                <div class="forntend">
+                    <div class="project w-11/12 bg-slate-800 p-6 text-white rounded-xl">
+                        <h1 class="text-2xl mb-6">1. Ames Foundation</h1>
+                        <div class="details flex items-center gap-16 ">
+                            <div class="left px-8">
+                                <p class="text-lg mb-6">i have created a clone of the Ames Foundation website using HTML, CSS, and JavaScript, and integrating libraries like ScrollTrigger, GSAP, Locomotive, and Swiper.js for animations adds a layer of sophistication and interactivity to your creation.</p>
+
+                                <a class="text-green-500 border-b-2" href="https://github.com/thakurdeependra98/Become-a-Guardian">GitHub link</a>
+                            </div>
+                            <div class="right pl-24">
+                                <video class="w-2/3 h-1/3 rounded-md mb-6" autoplay muted loop src="./media/Become a Guardian - Thakur Deependra Singh - Microsoft​ Edge 2023-11-30 23-04-19.mp4"></video>
+                                <a class="text-white border text-md bg-[#159f00] py-2 px-4 rounded-md" href="https://thakurdeependra98.github.io/Become-a-Guardian/">Visit Site</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <h1></h1>
+                    </div>
+                    <div class="project">
+                        <h1></h1>
+                    </div>
                 </div>
             </div>
         </div>
