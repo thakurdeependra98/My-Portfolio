@@ -92,8 +92,8 @@ gsap.from(".page2",{
   scrollTrigger:{
       scroller:".main",
       trigger:".page2",
-      start:"top 50%",
-      end:"top -50%",
+      start:"top 52%",
+      end:"top -20%",
       // markers:true,
       scrub:2,
       pin:true,
@@ -170,17 +170,25 @@ text.forEach(function(e){
     })
 })
 
-// gsap.from(".skills",{
-//   opacity:0,
-//   scale:0,
-//   stagger:0.2,
-//   scrollTrigger:{
-//     scroller:".main",
-//     trigger:".page3",
-//     start:"top 10%",
-//     end:"top -90%",
-//     // markers:true,
-//     scrub:1,
-//     pin:true,
-//   }
-// })
+const front = document.querySelector("#front")
+const frontend = document.querySelector(".frontend")
+const back = document.querySelector("#back")
+const backend = document.querySelector(".backend")
+
+back.addEventListener("click", function(){
+  backend.style.display="block";
+  frontend.style.display = "none";
+  front.style.borderBottom = "0px solid #159f00";
+  front.style.fontWeight = '100';
+  back.style.fontWeight = '400';
+  back.style.borderBottom = "2px solid #159f00";
+})
+
+front.addEventListener("click", function(){
+  frontend.style.display="block";
+  backend.style.display = "none";
+  front.style.borderBottom = "2px solid #159f00";
+  front.style.fontWeight = '400';
+  back.style.fontWeight = '100';
+  back.style.borderBottom = "0px solid #159f00";
+})
