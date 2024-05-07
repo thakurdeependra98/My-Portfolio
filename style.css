@@ -79,7 +79,7 @@ nav h3:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20vh 5vw;
+    padding: 32vh 5vw;
     /* background:radial-gradient( #be000045,#be000009); */
 }
 .home{
