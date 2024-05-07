@@ -31,12 +31,11 @@ header{
     width: 100vw;
     height: 10vh;
     display: flex;
-    /* position: fixed; */
+    position: absolute;
     z-index: 999;
     align-items: center;
     justify-content: space-between;
     padding: 20px 10vw;
-    /* mix-blend-mode:difference; */
     background-color:var(--backgroundColor);
     cursor: pointer;
     border-bottom: 1px solid var(--secondarycolor);
