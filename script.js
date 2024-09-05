@@ -193,23 +193,23 @@ front.addEventListener("click", function(){
   back.style.borderBottom = "0px solid #159f00";
 })
 
-const contact = document.querySelector(".contact");
-contact.addEventListener("mousemove",function(e){
-  gsap.to(mouse,{
-    top:e.y-55+"px",
-    left:e.x-55+"px",
-    transform: "scale(1)",
-    display: "block",
-    // duration:0.2,
-  })
-})
-contact.addEventListener("mouseenter", function(){
-  gsap.to(mouse,{
-    transform: "scale(1)",
-  })
-})
-contact.addEventListener("mouseleave", function(){
-  gsap.to(mouse,{
-    transform: "scale(0)",
-  })
-})
+// const contact = document.querySelector(".contact");
+// contact.addEventListener("mousemove",function(e){
+//   gsap.to(mouse,{
+//     top:e.y-55+"px",
+//     left:e.x-55+"px",
+//     transform: "scale(1)",
+//     display: "block",
+//     // duration:0.2,
+//   })
+// })
+// contact.addEventListener("mouseenter", function(){
+//   gsap.to(mouse,{
+//     transform: "scale(1)",
+//   })
+// })
+// contact.addEventListener("mouseleave", function(){
+//   gsap.to(mouse,{
+//     transform: "scale(0)",
+//   })
+// })

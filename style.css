@@ -22,11 +22,6 @@ body{
     /* height: 100vh; */
     background-color: var(--primarycolor);
 }
-/* .mouse{
-    background-image: url("./Screenshot_2024-05-02-13-54-51-68_a63b0f8076346d26cbdc1b971a1da2a7-removebg-preview.png");
-    background-position: top;
-    background-size: cover;
-} */
 header{
     width: 100vw;
     height: 10vh;
@@ -72,6 +67,18 @@ nav h3:hover{
     font-weight: 500;
     color: var(--secondarycolor);
     border-bottom: 2px solid var(--secondarycolor);
+}
+
+@media screen and (max-width: 600px) {
+    .logo{
+        font-size: 1rem;
+    } 
+}
+@media screen and (max-width: 600px) {
+    
+    nav{
+        display:none;
+    }
 }
 .page1{
     width: 100vw;
